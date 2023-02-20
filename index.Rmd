@@ -70,8 +70,21 @@ Within the data focusing on the coat of the dog we see that there is a high popu
 
 ### Table
 ```{r, echo=FALSE}
+
+library(dplyr)
+library(ggplot2)
+library("scales")
+
 source('agg table.R')
-agg_dog_table
+
+knitr::kable(agg_dog_table, 
+             col.names = c("Age",
+                           "Sex",
+                           "Breed",
+                           "Coat",
+                           "Posted")
+             )
+# agg_dog_table
 
 ```
 
