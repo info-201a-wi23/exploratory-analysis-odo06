@@ -21,16 +21,23 @@ No more than three sentences that summarize your project. Focus on the very most
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Dogs Shelter Statistics
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+Our main focus is the statistics behind dogs in shelters; as a group, we want to understand the impact that certain variables have on the chances for a dog to get adopted. We want to see how the age of the dogs affects the chances of it getting a family. Whether the dog is female or male impacts the likelihood of adoption. The breed, to when they were posted for adoption, as well as the coat of the dog having an effect on getting chosen. We will be extracting the data from alldogdescription, in able to see the statistics regarding how our given variables will affect the chances of adoption. We were motivated to look at the population of dogs in shelters to see how the characteristics of the dog can impact their ability to get adopted and what actions that we are able to take to increase the likelihood of these dogs to get a better life. This is important because dogs have the ability to improve the lives of people and by providing these dogs with a home they are able to change their lives as well. Our goal is to present the information for dog owners and future dog owners to be mindful of when providing our furry friends a chance to change their lives.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+The first decision to be made is the place of adoption, whether that is from a breeder or shelter. In the shelter, there is variety in dog breeds to select from, enabling future dog owners to see who the best fit for them would be. Since each dog has unique characteristics and personalities as well as each dog-owner having certain requirements when adopting a pet, we aim to investigate how these differences affect their appeal or lack thereof. Some dog breeds suffer from negative reputations and bad connotations regarding their behaviors caused by these misconstrued stereotypes. Common misconceptions among non-dog owners label rottweilers as aggressive and rough when in reality they are large and excitable. Another example comes from chihuahuas, which are perceived to be annoying and noisy when they just lack proper training. Understandably, people could have allergies that limit their options and decision in the search for a canine companion. Dogs with curly and longer coats tend to shed less and are hypoallergenic, although that does not mean they are completely allergy-free, they do significantly reduce the symptoms and reactions to fur. Lastly, the time a potential dog owner is willing to commit makes up argumentatively the most important step in adoption. Raising a dog is a big responsibility, some lead busier lives than others, have less time to dedicate to training and prefer low maintenance breeds meanwhile a family with kids could keep up with high energy ones that require a lot of attention. All these factors need to be taken in consideration when evaluating why a specific breed is adopted more or less than another should a correlation be found.
+
+References
+
+Editor. “Debunking 5 Common Dog Breed Stereotypes.” Dog's Best Life, DogsBestLife.com Online Magazine, 8 Feb. 2022, https://dogsbestlife.com/dog-breeds/dog-breed-stereotypes/.
+
+Schamble, Melody. “Dog Breeds That Don't Shed: Best Dogs for Allergies.” American Kennel Club, American Kennel Club, 1 July 2022, https://www.akc.org/expert-advice/lifestyle/dog-breeds-that-dont-shed/.
+
+Stregowski, Jenna. “10 Low-Maintenance Dog Breeds for Busy or Lazy Owners.” The Spruce Pets, The Spruce Pets, 21 Sept. 2022, https://www.thesprucepets.com/low-maintenance-dog-breeds-4145311.
 
 ### The Dataset
 
@@ -56,7 +63,10 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 ### Table
 
-Include a table of aggregate information
+```{r, echo=FALSE}
+newdog <- allDogDescriptions %>% 
+  select()
+```
 
 Describe why you included the table and what information it reveals
 
