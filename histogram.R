@@ -12,5 +12,3 @@ hist <- ggplot(data = post) +
   geom_histogram(mapping = aes(x = days, fill = sex)) +
   labs(title = "Number of Days in Shelters by Gender", x = "Days", y = "Count") +
   facet_wrap(~sex)
-
-hist
