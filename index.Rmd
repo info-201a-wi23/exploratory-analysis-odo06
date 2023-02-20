@@ -100,5 +100,10 @@ Describe why you chose this chart and what information it reveals
 ### Chart 3
 
 Include a chart
+```{r chart 3, echo=FALSE}
+source('histogram.R')
+hist
+
+```
 
 Describe why you chose this chart and what information it reveals
