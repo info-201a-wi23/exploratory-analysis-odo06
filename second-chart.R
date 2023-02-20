@@ -17,3 +17,4 @@ coat_pie_chart <- ggplot(allDogDescriptions, aes(x = coat, fill = coat)) +
   coord_polar("y", start = 0)
 coat_pie_chart
 
+# Explanation
