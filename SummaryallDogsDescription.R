@@ -1,8 +1,3 @@
----
-title: "Exploratory Analysis"
-output: html_document
----
-
 ## Project title
 
 In the Dog Pound
@@ -71,49 +66,3 @@ A challenge we anticipate within the dataset is determining which variables (i.e
 ### Summary Information
 
 Within the data focusing on the coat of the dog we see that there is a high population of dogs with shorter hair. Whereas, dogs with wired and long coats are less seen in the dog shelters. For the duration that the dogs stayed in the shelters we compared this data to the dog's gender and saw that regardless of gender the data was similar in that within 1200 days approximently 18000-20000 dogs. Looking at the data for the dogs age, we saw a higher population of older dogs, however there was a change with senior dogs but we believe that, that was due to deaths of old age. Lastly, we saw that the breed most in shelters was yorkshire terrier, where as the least breed of dog in the shelters being affenpinscher.
-
-### Table
-
-
-Describe why you included the table and what information it reveals
-
-### Chart 1
-
-Include a chart
-
-library(ggplot2)
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-Problems: getting the color to go on the bars, and changing the order of the bars
-```{r, echo=FALSE}
-library(ggplot2)
-ggplot(allDogDescriptions, aes(x = age, fill = age)) +
-  geom_bar()+
-  labs(title = "Age of Dogs in Shelters",
-       x = "Age",
-       y = "Quantity of Dogs in Shelters") 
-```
-
-
-In order to visually let our audience see the categorical data difference between the age range of the dogs in the shelter, we decided that a bar chart was the best method. By using the bar chart we are able to compare the stages of life that each dog is at through categorizing it by; baby, young, adult, and senior. We also added color to each bar to allow viewers a better visual comparison. The information in this chart reveals a correlation between the age of dogs and how many get left in the shelter. As a dog gets older, we see a larger quantity left in the shelter, however, there is the outlier of senior dogs that we see have the lowest quantity in the shelter. Alternatively, there are other factors that can contribute to this, for example dying of old age.
-
-### Chart 2
-
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-### Chart 3
-
-Include a chart
-```{r chart 3, echo=FALSE}
-source('histogram.R')
-hist
-
-```
-
-Describe why you chose this chart and what information it reveals
-
-By splitting this histogram into different facets, we attempt to show the number of days that a dog typically remains in a shelter based on their gender Using a histogram helps visualize the frequency distribution of the dataset making it is easier to tell how many days are the most or least common for a dog to stay for. The graphs reveal that a majority of dogs stay for around 1200 days. Additionally, they are skewed right, meaning that the number of dogs that stay past 1200 days decreases as time goes on. Several possible outliers exist as well, which are most likely those that have stayed for over 6000 days. Another piece of information that this visualization expresses is that a dog's gender does not play a large role in its adoption since we see that the mode heavily outnumbers the other values. 
