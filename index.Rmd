@@ -13,7 +13,7 @@ Olivia Do, Cathy Nguyen, Jenny Suk, and Leo Zheng
 
 ### Date
 
-Winter 2022
+Winter 2023
 
 ### Abstract
 
@@ -42,31 +42,38 @@ Stregowski, Jenna. “10 Low-Maintenance Dog Breeds for Busy or Lazy Owners.” 
 ### The Dataset
 
 Where did you find the data? Please include a link to the data source  
+Data found in Pudding:  https://github.com/the-pudding/data/tree/master/dog-shelters
+
 Who collected the data?  
+  Amber Thomas
 How was the data collected or generated?  
+  Generated from PetFinder API
 Why was the data collected?  
-How many observations (rows) are in your data?  
+  Data was collected help more dogs get adopted and to better understand the traits of dogs in shelters and why dogs are in shelters. The compilation of this data set will give insights into why certain dogs are in shelters and what these dogs currently in shelters may have in common.
+How many observations (rows) are in your data?  58180
 How many features (columns) are in the data?  
+  36
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+  Some ethical questions to consider when working with this data are how is the adoptability determined, who determines the adoptability, and are the criteria for adoptability the same accross the dataset. Additionally, there may be other factors that can help to determine
 What are possible limitations or problems with this data?   (at least 200 words)
+Some limitations with this data set are that the standards for how the data is collected is unknown. For example, it is unknown whether the definition for whether or not a dog is adoptable is the same for every location in the data set. The dataset also may not contain data for every dog in the US, it only includes data for dogs in the PetFinder API system. Additionally, there is no information on how well the dogs are trained, which could play a large factor in whether or not someone would want to adopt a specific dog (it does however have a column for whether or not a dog is house trained). Another limitation to the data is that the categories for if a dog is compatable with other dogs, cats and children are all categorized as a simple yes or no. This could be misleading because a specific dogs reaction in these situations may depend on other factors that are not taken into account in this dataset. The purpose of the dataset is to help dogs find homes and therefore, the data provided could potentially be biased towards making dogs seem more adoptable. This could be entirely unintentional but must be considered when working with this data set.
+
+
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Providing information on the currently available dogs within various shelters can help improve the adoption rate. People are probably more willing to enter a shelter knowing the availability beforehand and also having a particular set of traits in mind. Another implication is that the population of the city where the shelter is located in could play a large role in the adoption of a dog. Cities with more residents may inherently result in a higher probability of adoption due to the sheer number of people. Even if a dog perfectly matches someone's desired qualities, the location can make them less willing to go due to how remote the place is. On the other hand, heavily populated areas see more adoptions just from convenience. From this, policymakers might be able to base their ideas on these subtleties. Additionally, since the shelters are all based in the United States, there is a possibility that certain traits are just favored by Americans overall. Further research might need to be conducted to find the preferences of other countries. This would not only allow for more universal conclusions but also gives more insight into the similarities/differences between each country.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+A challenge we anticipate within the dataset is determining which variables (i.e., dogs’ traits) should hold the most weight and are worth accounting for when organizing the data. This limitation is notable because the original dataset contains 36 variables (columns) and includes numerous descriptions such as coat length, age, whether the dog is neutered/spayed or not, whether the dog is trained to go to the bathroom outside of the house or not, whether the dog is sociable or not (recommended to be around other dogs, cats, and children or not), and much more. An abundance of data entails a competition-like process of organizing datasets among categories of what you deem most important. Our Data Feminism readings go into great detail about the subjectivity of data “cleanliness” and how that can shape the interpretations of the general public and policymakers of the data. Erasure of data diversity for the sake of “cleanliness” will be inevitable, but it will be something we will be conscious of throughout the process of data building.
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+Within the data focusing on the coat of the dog we see that there is a high population of dogs with shorter hair. Whereas, dogs with wired and long coats are less seen in the dog shelters. For the duration that the dogs stayed in the shelters we compared this data to the dog's gender and saw that regardless of gender the data was similar in that within 1200 days approximently 18000-20000 dogs. Looking at the data for the dogs age, we saw a higher population of older dogs, however there was a change with senior dogs but we believe that, that was due to deaths of old age. Lastly, we saw that the breed most in shelters was yorkshire terrier, where as the least breed of dog in the shelters being affenpinscher.
 
 ### Table
 
-```{r, echo=FALSE}
-newdog <- allDogDescriptions %>% 
-  select()
-```
 
 Describe why you included the table and what information it reveals
 
@@ -81,6 +88,7 @@ Describe why you chose this chart and what information it reveals
 Here's an example of how to run an R script inside an RMarkdown file:
 Problems: getting the color to go on the bars, and changing the order of the bars
 ```{r, echo=FALSE}
+library(ggplot2)
 ggplot(allDogDescriptions, aes(x = age, fill = age)) +
   geom_bar()+
   labs(title = "Age of Dogs in Shelters",
