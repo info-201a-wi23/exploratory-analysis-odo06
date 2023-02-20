@@ -66,9 +66,14 @@ A challenge we anticipate within the dataset is determining which variables (i.e
 
 ### Summary Information
 
-Within the data focusing on the coat of the dog we see that there is a high population of dogs with shorter hair. Whereas, dogs with wired and long coats are less seen in the dog shelters. For the duration that the dogs stayed in the shelters we compared this data to the dog's gender and saw that regardless of gender the data was similar in that within 1200 days approximently 18000-20000 dogs. Looking at the data for the dogs age, we saw a higher population of older dogs, however there was a change with senior dogs but we believe that, that was due to deaths of old age. Lastly, we saw that the breed most in shelters was yorkshire terrier, where as the least breed of dog in the shelters being affenpinscher.
+Within the data focusing on the coat of the dog we see that there is a high population of dogs with shorter hair. Whereas, dogs with wired and long coats are less seen in the dog shelters. For the duration that the dogs stayed in the shelters we compared this data to the dog's gender and saw that regardless of gender the data was similar in that within 1200 days approximately 18000-20000 dogs. Looking at the data for the dogs age, we saw a higher population of older dogs, however there was a change with senior dogs but we believe that, that was due to deaths of old age. Lastly, we saw that the breed most in shelters was Yorkshire Terrier, where as the least breed of dog in the shelters being Affenpinscher.
 
 ### Table
+```{r, echo=FALSE}
+source('agg table.R')
+agg_dog_table
+
+```
 
 Describe why you included the table and what information it reveals
 
