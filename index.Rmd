@@ -64,12 +64,22 @@ Describe why you included the table and what information it reveals
 
 Include a chart
 
+library(ggplot2)
+
 Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+Problems: getting the color to go on the bars, and changing the order of the bars
+```{r, echo=FALSE}
+ggplot(allDogDescriptions, aes(x = age, fill = age)) +
+  geom_bar()+
+  labs(title = "Age of Dogs in Shelters",
+       x = "Age",
+       y = "Quantity of Dogs in Shelters") 
 ```
+
+
+In order to visually let our audience see the categorical data difference between the age range of the dogs in the shelter, we decided that a bar chart was the best method. By using the bar chart we are able to compare the stages of life that each dog is at through categorizing it by; baby, young, adult, and senior. We also added color to each bar to allow viewers a better visual comparison. The information in this chart reveals a correlation between the age of dogs and how many get left in the shelter. As a dog gets older, we see a larger quantity left in the shelter, however, there is the outlier of senior dogs that we see have the lowest quantity in the shelter. Alternatively, there are other factors that can contribute to this, for example dying of old age.
 
 ### Chart 2
 
