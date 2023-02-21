@@ -1,4 +1,4 @@
----
+
 title: "Exploratory Analysis"
 output: html_document
 ---
@@ -108,9 +108,15 @@ In order to visually let our audience see the categorical data difference betwee
 
 ### Chart 2
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
+coat_pie_chart <- ggplot(allDogDescriptions, aes(x = coat, fill = coat)) +
+  geom_bar() +
+  labs(title = "Types of Coats in Dog Shelters",
+       x = "Coat",
+       y = "Number of Dogs") + 
+  coord_polar("y", start = 0)
+coat_pie_chart
+  
+The pie chart reveals a visual representation of the distribution of coat types among the dog population in shelters. The coat types are divided into seven categories: curly, hairless, long, medium, short, wire, and NA. A vast majority of the data includes NA values. The chart displays that the most common type of coat in dog shelters is short, and the least common characteristics are hairless and curly.
 
 ### Chart 3
 
