@@ -58,7 +58,11 @@ Some limitations with this data set are that the standards for how the data is c
 
 ### Implications
 
+<<<<<<< HEAD
 Providing information on the currently available dogs within various shelters can help improve the adoption rate. People are probably more willing to enter a shelter knowing the availability beforehand and also having a particular set of traits in mind. Another implication is that the population of the city where the shelter is located in could play a large role in the adoption of a dog. Cities with more residents may inherently result in a higher probability of adoption due to the sheer number of people. Even if a dog perfectly matches someone's desired qualities, the location can make them less willing to go due to how remote the place is. On the other hand, heavily populated areas see more adoptions just from convenience. From this, policymakers might be able to base their ideas on these subtleties. Additionally, since the shelters are all based in the United States, there is a possibility that certain traits are just favored by Americans overall. Further research might need to be conducted to find the preferences of other countries. This would not only allow for more universal conclusions but also gives more insight into the similarities/differences between each country.
+=======
+Technologists, designers, and policymakers can observe which dog demographic (e.g., dog age and coat) are most common in dog shelters. An implication they can draw from the data is which qualities of the dogs are the most and least desirable, as a high population of a type of dog in shelters imply low desirability/demand among potential dog owners. Another implication from the data for dog shelters is to adjust the price of dogs according to the demand for the qualities of the dogs; a dog with a certain age and type of coat can be priced higher or lower considering its degree of demand by looking at our data. Policymakers can take the data and consider enacting equity-focused legislative reforms that advocate for the types of dogs that are lower in demand and more likely to end up in shelters to enable those dogs are more likely to find a forever home. 
+>>>>>>> 321d353 (Save changes)
 
 ### Limitations & Challenges
 
