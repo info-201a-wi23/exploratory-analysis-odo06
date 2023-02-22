@@ -10,5 +10,5 @@ post <- dogs %>%
 
 hist <- ggplot(data = post) +
   geom_histogram(mapping = aes(x = days, fill = sex)) +
-  labs(title = "Number of Days in Shelters by Gender", x = "Days", y = "Count") +
+  labs(title = "Number of Days in Shelters by Gender", x = "Days", y = "Number of Dogs") +
   facet_wrap(~sex)
